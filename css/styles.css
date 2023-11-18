@@ -6,10 +6,44 @@ body{
 }
  ul{
     list-style-type: none;
-     
+} 
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p {
+       margin-top: 0;
+       margin-bottom: 0;
+   }
+
+   ul,ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+   }
+   img {
+    display: block;
+   }
+
+   .section {
+    padding-top: 60px ;
+    padding-bottom: 60px;
+    
+   }
+   .container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+
 
 /* HEADER ШАПКА */
-}
+
 .logo-studio{
     color:#2E2F42;
     font-family: "Raleway", sans-serif;
@@ -59,12 +93,49 @@ body{
     letter-spacing: 0.32px;
     text-decoration: none;
     
+    
 }
 .address .address-list:hover,
 .address .address-list:focus {
     color: #404bbf;
 }
   
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+ .nav-link{
+    display: flex;
+ }
+
+ .page-nav {
+    display: flex;
+    gap: 40px;
+ }
+ .nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+ }
+.address-link {
+    display: flex;
+    gap: 40px;
+}
+.logo-web {
+    margin-right: 76px;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+    display: block;
+    
+}
+.address-list {
+    padding-top: 24px;
+        padding-bottom: 24px;
+        display: block;
+
+}
+
+
 
 
 /* MAIN */ 
@@ -73,6 +144,7 @@ body{
 /*SECTION 1 */
 .section-hero {
 background-color: #2E2F42;
+padding: 120px 0;
 }
 
 .section-hero .hero {
@@ -85,6 +157,7 @@ background-color: #2E2F42;
     line-height: 60px;
     line-height: 1.07 ;
     text-align: center;
+    
 }
 .section-hero .button {
     background-color: #4D5AE5;
@@ -98,15 +171,32 @@ background-color: #2E2F42;
 }
    
 
-    
 
     .section-hero .button:hover,
     .section-hero .button:focus {
         background-color:#404BBF ;
     }
    
+ .hero {
+     width: 496px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 48px;
+ }
+ .button {
+   margin: 0 auto;
+   display: block;
+ padding: 16px 32px;
+
+
+ }
+
+
 
     /* SECTION 2 */
+        .section-two{
+            padding: 120px 0;
+        }
 .title {
     color: #2E2F42;
     font-size: 36px;
@@ -118,7 +208,17 @@ background-color: #2E2F42;
 }
     .advantages-list-team {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 32px;
     }
+
 
    
  .advantages-list .advantages {
@@ -133,7 +233,42 @@ background-color: #2E2F42;
  .advantages-list .advantages-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
+
 }
+
+ .visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+
+}
+.excellence-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+    
+}
+.two-section-item {
+    width: calc((100% - 72px) / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+}
+
+
 
  
 
@@ -146,6 +281,81 @@ background-color: #2E2F42;
 
 
 
+  .three-list {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
+  }
+
+  .section-three-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 32px 0;
+    
+  }
+
+  
+
+.our-team {
+    padding: 120px 0;
+}
+
+
+/* PORTFOLIO */
+
+.section-four {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+}
+.section-portfolio-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        column-gap: 24px;
+        row-gap: 48px;
+        padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        
+}
+.section-four-list-item {
+ width: calc((100% - 48px) / 3);
+ display: flex;
+ padding-bottom: 0px;
+ gap: 32px;
+ flex-shrink: 0;
+ align-items: flex-start;
+ flex-direction: column;
+
+
+
+
+}
+.advantages-text-four {
+    display: flex;
+    padding: 32px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border: 1px solid var #E7E9FC;
+    border-top: none;
+}
+.section-four-container {
+
+}
+
+.our-portfolio-title {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 
 
 
@@ -153,8 +363,17 @@ background-color: #2E2F42;
  .footer {
     background-color: #2E2F42;
     text-decoration: none;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    
     
  }
+.logo-list {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
  .footer .logo-list {
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
@@ -183,5 +402,6 @@ font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 letter-spacing:0.02em;
+width: 264px;
 }
 
