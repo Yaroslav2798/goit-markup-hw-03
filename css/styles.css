@@ -202,16 +202,16 @@ border-radius: 4px;
 
 
     /* SECTION 2 */
-        .section-two{
-            padding: 120px 0;
-        }
-         .advantages {
-          margin-bottom: 8px;
-
-          }
-          .advantages-text {
-            
-          }
+                .section-two {
+                    padding: 120px 0;
+                }
+        
+                .advantages {
+                    margin-bottom: 8px;
+        
+                }
+        
+                .advantages-text {}
 .title {
     color: #2E2F42;
     font-size: 36px;
@@ -297,11 +297,10 @@ margin-bottom: 8px
  .team {
     background-color:#F4F4FD;
     margin-bottom: 8px;
+    padding: 120px 0;
  }
 
-.team section{
-    padding: 120px 0;
-}
+
 
   .three-list {
     display: flex;
