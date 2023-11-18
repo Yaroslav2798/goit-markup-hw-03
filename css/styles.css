@@ -106,6 +106,7 @@ body{
 }
  .nav-link{
     display: flex;
+    align-items: center;
  }
 
  .page-nav {
@@ -134,7 +135,9 @@ body{
         display: block;
 
 }
-
+.header-container-box {
+    border-bottom: 1px solid #e7e9fc;
+}
 
 
 
@@ -144,7 +147,7 @@ body{
 /*SECTION 1 */
 .section-hero {
 background-color: #2E2F42;
-padding: 120px 0;
+padding: 188px 0;
 }
 
 .section-hero .hero {
@@ -182,11 +185,16 @@ padding: 120px 0;
      margin-left: auto;
      margin-right: auto;
      margin-bottom: 48px;
+    max-width: 496px;
  }
  .button {
    margin: 0 auto;
    display: block;
  padding: 16px 32px;
+min-width: 169px;
+height: 56px;
+border: none;
+border-radius: 4px;
 
 
  }
@@ -197,6 +205,9 @@ padding: 120px 0;
         .section-two{
             padding: 120px 0;
         }
+                .advantages {
+                    margin-bottom: 8px;
+                }
 .title {
     color: #2E2F42;
     font-size: 36px;
@@ -274,12 +285,18 @@ padding: 120px 0;
 
 
 /* SECTION 3 */
+.title-text-three {
+text-align: center;
+margin-bottom: 8px
+}
 
  .team {
     background-color:#F4F4FD;
  }
 
-
+.team section{
+    padding: 120px 0;
+}
 
   .three-list {
     display: flex;
@@ -300,12 +317,16 @@ padding: 120px 0;
   
 
 .our-team {
-    padding: 120px 0;
+    margin-bottom: 72px;
+}
+.advantages-text{
+    text-align: center;
 }
 
-
 /* PORTFOLIO */
-
+.our-portfolio-title {
+    margin-bottom: 72px;
+}
 .section-four {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -346,6 +367,8 @@ padding: 120px 0;
     align-self: stretch;
     border: 1px solid var #E7E9FC;
     border-top: none;
+    border: 1px solid #e7e9fc;
+    margin-bottom: 8px;
 }
 .section-four-container {
 
